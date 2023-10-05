@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@400;500;600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+    background-color: #fff;
+    direction: rtl;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.my-font {
+    font-family: 'Tajawal', sans-serif;
+    padding: 5px 20px;
+
+}
+
+.login-box {
+    top:20%;
+    right: 50%;
+    width: 300px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px;
+    box-shadow: 2px 2px 4px #000;
+    position: absolute;
+    transform: translate(50%, -20%);
+}
+
+.login-title {
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.login-form input[type=text],
+.login-form input[type=password] {
+    margin: 10px 0;
+    width: 100%;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 15px;
+    border: 2px solid rebeccapurple;
+    border-radius: 6px;
+    padding: 8px 10px;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.login-form input[type=submit] {
+    margin: 10px 0;
+    width: 100%;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 15px;
+    border: 2px solid #6600ff;
+    border-radius: 6px;
+    background-color: #6600ff;
+    padding: 8px 10px;
+    outline: none;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    color: #ECF0F1;
+    background-color: #192330;
+    padding: 12px 20px;
+    position: relative;
+}
+
+.header-title {
+    font-size: 30px;
+}
+
+.side-menu {
+    top: 14px;
+    left: 0;
+    position: absolute;
+    display: flex;
+}
+
+.menu-item {
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+    background-color: #2C3E50;
+    padding: 8px 10px;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.side-bar {
+    right: 0;
+    width: 220px;
+    height: calc(100% - 60px);
+    background-color: #192330;
+    padding-top: 20px;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.item-bar {
+    width: 100%;
+    height: auto;
+    color: #ECF0F1;
+    font-size: 18px;
+    border-bottom: 1px solid #2A3B52;
+    padding: 10px 15px;
+    transition: 0.3s all;
+}
+
+
+.item-bar:hover {
+    background-color: #18BC9C;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#req2{
+    display: none;
+}
+.sub-menu{
+    width: 220px;
+    height: 0px;
+    color: white;
+    background-color: #273748;
+    overflow: hidden;
+    transition: 0.3s all ;
+}
+
+.sub-menu > div {
+    width: 100%;
+    height: auto;
+    color: #ECF0F1;
+    font-size: 18px;
+    border-bottom: 1px solid #2A3B52;
+    padding: 10px 15px;
+    transition: 0.3s all;
+}
+
+.sub-menu > div:hover{
+    background-color: #344865;
+    cursor: pointer;
+
+
+}
+.content-bar {
+    left: 0;
+    width: calc(100% - 220px);
+    height: calc(100% - 60px);
+    background-color: white;
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.path-bar {
+    margin: 20px;
+    padding: 10px ;
+    color:#bbaeaf ;
+    font-size: 18px;
+    background-color: #ECF0F1;
+    display: flex;
+    position: relative;
+}
+.url-path {
+    margin: 0 5px;
+}
+
+.path-bar > button {
+    top: 8px;
+    left: 10px;
+    color: white;
+    font-family: 'Tajawal' , sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #18BC9C;
+    border-radius: 3px;
+    background-color: #18BC9C;
+    padding: 3px 10px;
+    box-shadow: 2px 2px 1px #ccc;
+    position: absolute;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transitian: 0.3s all;
+}
+.path-bar > button:hover{
+    background-color: #159e82;
+}
+.active-path{
+    color: #18BC9C;
+
+
+}
+.panel-bar{
+    margin: 50px 20px;
+    display: flex;
+}
+
+
+.panel-bar > div{
+    width: 25%; 
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+.panel-bar >div >div {
+    margin-top: 10px;
+    color: #08f;
+    font-size: 25px;
+}
+
+
+.title-bar-2{
+    margin: 20px  ;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    background-color: #222f41;
+    padding: 10px;
+}
+table{
+    margin: 20px;
+    width:  calc(100% - 40px);
+    max-width: calc(100% - 20px);
+    font-family: 'Tajawal', sans-serif;
+    border-collapse: collapse;
+    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.3) ;
+
+
+    
+}
+thead {
+    color: white;
+    padding: 10px;
+    background-color: #222f41;
+}
+thead tr th {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    text-align: right;
+}
+tbody tr td  {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 18px;
+    border:1px solid #ccc ;
+    background-color: #efefef; 
+    padding:10px;
+}
+
+.edit-btn{
+    color: white;
+    border-radius: 3px;
+    font-weight: 500;
+    background-color: #95a5a6;
+    padding: 3px 10px;
+    text-decoration:none; 
+}
+.del-btn{
+    color: white;
+    border-radius: 3px;
+    font-weight: 500;
+    background-color: #e74c3c;
+    padding: 3px 10px;
+    text-decoration:none; 
+}
+.container-form{
+    margin: 20px;
+}
+.container-form input[type=text],
+.container-form input[type=password],
+.container-form input[type=date],
+.container-form textarea[name=shipping_info],
+.container-form textarea[class="txt-style"],
+.container-form select option {
+    margin: 20px 0;
+    width: 100%;
+    font-family: 'Tajawal',sans-serif;
+    font-size: 18px;
+    border: 3px solid #dce4ec;
+    background-color: #efefef;
+    padding: 10px 15px;
+    display: block;
+}
+.container-form input[type=file]{
+    display: none;
+}
+.container-form .file-btn,
+.btn-style {
+    color: white;
+    font-family: 'Tajawal',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #15bc9c;
+    background-color: #18BC9C;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.container-form input[type=submit]{
+    color: white;
+    font-family: 'Tajawal',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #2C3E50;
+    background-color: #2C3E50;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.container-img {
+    width: auto;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.item-img{
+    margin: 10px;
+    width: 200px;
+    background-color: #efefef;
+    padding: 10px;
+
+
+}
+.close-btn{
+    margin-bottom: 10px;
+    width: 28px;
+    height: 28px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFPElEQVR4nO2Yy1NbVRzHM2pddNnqwilqqaWlYJuQB+GR5IYANyEvIBAI7VR37Fy1DhWo0FLb7tVBxz/BaV1o3bhwxjqD406nrjo45HETyM0NyQ06hAJf53cLjtKQe/IgbPjOsCKLz/fc3znne74azZGOdKSKhWDw5ax3rF32jE7mPCMPsu6RP+S+4XS2b3gj6xrakJ2BdIYPPMn2Bh5kegYnsz2DbZiZeUlz2Pq7f/TNnDd0X/aFYjnvKHKeUcjuEcjuIOS+IGTXMGTXELLOIWT5ALK99DeITM8AMt390VVH/70UN1hXc3A5GHw95w99KXvH8jlfCKXDKwaQcfiRtvvyq3bfvMx5X6sJfK7/8uU135iU842hUvjVLj9W7T6s2r1I2zwpyeIJHRg4xseP5fyXv1rzE3h14Vc5xQDSNjfSlr4vYDAcqy68d/x4zj/2/YHDWxUDSHU6HwkG7/Eqrnzt4KVOF6QOJ6R2/gc0BV+t2EBNxsa6F94JqY1Hytw7XyH82JVDhEeqtQeSsXu0LPjswNWTa/6QeJjwKVM3ksYuSTBwpR+xdM6zwEt8ALFuP5LdA8zwCasLkQ4eSQIvAi+aHBCNDiQNXZ+XBP/X4JU6lktK5AcRvjqO3MKvEKbnEO/yqsILFieiN2aR+/kXLA6/j3h7b1F40dCFpJ7Lpw2db7Gvvjd0n2XlCf5ZSgJpe3MTwsxdxO2efeFjFh6xqTnlt6RnYgqLgfewQuD7wIt6O5ItHJJa2z0meApZsm80qjbzNDa08v+VYuLjTyBwblX4Xck/LWDJ6CgOr7Nh5ZI1RqFR1QClSpYNSzNPY7MXSDFx8w4Em0sVfntzE5Fr0xBMjqLwSa2VDCChtbaqGngeidlOG5p5YfrOC2DY2oIwew/RTudz+MnbL8JvbSE6NYeIsYsJfuWiBSvvdt5Qn3/3yMNSjsq4nUwUWN0dE1WEx3Jzx9fqI+QOPin1nI9znoKg2NpWYKsBv9LcgURT++/qI+QOSuVcUnFbX2ETVYJfbmrH8oU2Uf0LuIL5cm9YweJCbPKWsgdegN/erhQeyxfM6+oGnEP5cuMBXVLKVyhggMaJTqKw3l4mfBsSja3qBmRXQKoIXnWEbmOphSsD3ozE+Vb1EVLagyrB09jsHSfFxEe3sKS1lgqPeINJfRNn+MDDqsDvbtjrNwv+L3JjFkuXLMzwiXMmJBqM6seo0tswwrNcUhGDHeHr04VNTMzgz+YOVngIZw0TqgaodGKNxJQqC8WD6MTs/06bsJ5D5MMCX2JzE0sfTCBKJlTg42eNiNcbTUxhLuMYiKg9RijPUyRWg989bcI6W8Evkf3xMRYbzerw7xjC0GjY2jxqzNReUvQYoTxPkVgNfve0oZkPX5v618RGUsRT1xBiO+BF4BE/03JXwyqq+3Yas6LPwEQ7r+R5+fGCkipZLqmli53K2NDKP3UNIcICX69fj9RpTzEbUL6C3TfP8oalxwjledZITBuWZp7GJsa08nrETus+1ZSqDM+fSNs8YikP8PJvWPO+8EK9LiWcM5TXm1JXebjwLYjV64KaSkRd5WHBC6d1n2kqFb1DpQ7nN4cA/x047hVNNURFa6qNf1Qz+Ld13wpvGKpT7u6KKm/qKmsxNqjWyhcSdZWiySFWGz52uiVZ8YZlVdbUfZLqPlHPrVcMX69fp3M+Utd0QlNrpbSOU9SYrWgtkZLhz+gjFA9KvmEPQhSyqHSi3oaqD2oPlhvN0nJjWz5x3pxPnDNJ8Qbjb5TnKRJTqmQOZkc60pE0xfQP2+EuKSLsPcgAAAAASUVORK5CYII=");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+}
